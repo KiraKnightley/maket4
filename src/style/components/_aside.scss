@@ -1,0 +1,170 @@
+.burger-menu{
+  display: none;
+  width: 100%;
+  max-width: 360px;
+  background-color: $color-base;
+  z-index: 2;
+  @media screen and (min-width: 360px){
+    position: absolute;
+    top: -88px;
+    left: 0;
+    width: 360px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+  @media screen and (min-width: 1439px){
+    width: 320px;
+    display: block;
+    position: static;
+    box-shadow: none;
+  }
+}
+
+.burger-menu__container{
+  margin: 0 24px;
+}
+
+.burger-menu__header{
+  display: flex;
+  align-items: center;
+  padding-top: 18.73px;
+  margin-bottom: 50.46px;
+}
+
+.menu-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $color-icons;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
+.burger-menu__header .menu-icon:first-child{
+  margin-right: 16.73px;
+}
+
+.burger-menu__header .menu-icon:last-child{
+  margin-left: auto;
+}
+
+.menu-close{
+  background-image: url("@assets/icons/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 1439px){
+    display: none;
+  }
+}
+
+.check-status{
+  background-image: url("@assets/icons/search-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.burger-menu__list{
+  list-style: none;
+  padding: 0;
+  font-family: $font-family-title;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $color-secondary;
+  font-weight: bold;
+  margin-bottom: 268px;
+}
+
+.burger-menu__title{
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:first-child{
+    color: $color-primary;
+  }
+}
+
+.burger-menu__title-active::before{
+  position: absolute;
+  left: 0;
+  content: ' ';
+  width: 4px;
+  height: 32px;
+  background-color: $color-divider-border;
+}
+
+.burger-menu__footer-title{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.burger-menu__footer-title .menu-icon{
+  margin-right: 16px;
+}
+
+.phone{
+  background-image: url("@assets/icons/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.message{
+  background-image: url("@assets/icons/message.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact{
+  background-image: url("@assets/icons/contact.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.burger-menu__footer-mail{
+  font-family: $font-family-title;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: bold;
+}
+
+.burger-menu__link{
+  color: $color-secondary;
+  text-decoration: none;
+}
+
+.burger-menu__footer-phone{
+  font-family: $font-family-head;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: $color-secondary;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.burger-menu__footer-lang{
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  padding-bottom: 32px;
+}
+.burger-menu__footer-lang li{
+  font-family: $font-family-title;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $color-secondary;
+  margin-right: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  &:first-child{
+    color: $color-primary;
+  }
+}

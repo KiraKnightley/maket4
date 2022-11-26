@@ -1,0 +1,80 @@
+.main__button{
+  height: 40px;
+  white-space: nowrap;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  font-family: $font-family-base;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.53px;
+  color: $color-primary;
+  padding: 8px 9.3px 8px 16.54px;
+}
+
+.main__button--active{
+  background-color: $color-base;
+  border: 2px solid $color-button-focus;
+  border-radius: 6px;
+  @media screen and (min-width: 1119px){
+    background-color: unset;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.main__button--desktop {
+  display: none;
+  @media screen and (min-width: 1119px) {
+    display: block;
+  }
+  &:nth-child(1){
+    @media screen and (min-width: 1119px) {
+      background-color: $color-base;
+      border: 2px solid $color-button-focus;
+      border-radius: 6px;
+    }
+  }
+}
+
+.main__button--desktop--off {
+  @media screen and (min-width: 1119px) {
+    display: none;
+  }
+}
+
+
+.button__card{
+  width: 40px;
+  height: 40px;
+  border: 2px solid $color-icons;
+  border-radius: 20px;
+  background-color: #ffffff;
+  background-image: url("@assets/icons/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.price__button{
+  margin-top: 10px;
+  width: 119px;
+  height: 32px;
+  border: none;
+  padding-left: 12px;
+  color: $color-base;
+  border-radius: 16px;
+  background-color: $color-icons;
+  background-image: url("@assets/icons/dropdown-white.svg");
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: center;
+  font-family: $font-family-head;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

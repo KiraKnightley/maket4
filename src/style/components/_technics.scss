@@ -1,0 +1,110 @@
+
+.technics__slider{
+  display: flex;
+  @media screen and (min-width: 767px){
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+}
+
+.technics__slide{
+  margin: 16px;
+  height: 158px;
+  min-width: 238px;
+  max-width: 238px;
+  background-color: $color-base;
+  border: 1px solid $color-background;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  &:first-child{
+    margin-left: 5px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1119px){
+    margin: 0 0 16px 24px;
+    min-width: 222px;
+    max-width: 222px;
+    &:first-child{
+      margin-left: 24px;
+    }
+    &:last-child{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1119px){
+    margin: 0 0 16px 32px;
+    min-width: 238px;
+    max-width: 238px;
+    &:first-child{
+      margin-left: 32px;
+    }
+  }
+}
+
+.technics__item{
+  margin-top: 16px;
+  margin-left: 16px;
+  color: $color-secondary;
+  font-family: $font-family-title;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.technics__button{
+  margin-top: 102px;
+}
+
+.technics__swiper-pagination{
+  justify-content: center;
+  padding-bottom: 38px;
+  display: flex;
+  position: static;
+  @media screen and (min-width: 767px){
+    display: none;
+  }
+}
+
+.swiper-pagination__circle{
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: $color-circle;
+  margin-right: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-circle-active;
+}
+
+.technics__button-block{
+  display: none;
+  @media screen and (min-width: 767px) and (max-width: 1119px) {
+    display: block;
+    margin: 8px 0 0 32px;
+    padding-bottom: 34px;
+  }
+  @media screen and (min-width: 1119px) {
+    display: block;
+    margin: 8px 0 0 32px;
+    padding-bottom: 34px;
+  }
+}
+
+.technics__button-slide{
+  border: none;
+  background-color: inherit;
+  background-image: url("@assets/icons/down.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-family: $font-family-title;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $color-secondary;
+  padding-left: 17px;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+@import 'normalize.css';
+@import "swiper-bundle.css";
+
+@import 'style/abstract/fonts';
+@import 'style/abstract/constans';
+
+// base
+@import 'style/base/base';
+@import 'style/base/buttons';
+
+// layouts
+@import 'style/layouts/header';
+@import 'style/layouts/container';
+@import 'style/layouts/footer';
+
+// components
+@import "style/components/aside";
+@import 'style/components/about';
+@import "style/components/repair-brand";
+@import "style/components/technics";
+@import "style/components/price";
+@import "style/components/side-bar";

@@ -1,0 +1,123 @@
+.header__icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $color-icons;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
+.divider{
+  width: 2px;
+  height: 32px;
+  background-color: $color-background;
+  border-radius: 1px;
+  align-self: center;
+  @media screen and (min-width: 1119px){
+      display: none;
+  }
+}
+
+.divider__tablet{
+  display: none;
+  @media screen and (min-width: 767px) and (max-width: 1119px){
+      display: block;
+      margin: 0 20px;
+  }
+}
+
+.logo{
+  margin: 0 16.73px;
+  @media screen and (min-width: 767px) and (max-width: 1119px){
+      margin: 0;
+  }
+  @media screen and (min-width: 1119px){
+      display: none;
+  }
+  @media screen and (min-width: 1439px){
+    display: block;
+    margin: 0;
+  }
+}
+
+/* header tools*/
+
+.header__tools{
+  display: flex;
+  margin-left: auto;
+}
+
+.menu{
+  background-image: url("@assets/icons/burger.svg");
+  @media screen and (min-width: 1119px){
+      display: none;
+  }
+}
+
+.phone{
+  background-image: url("@assets/icons/phone.svg");
+}
+
+.message{
+  background-image: url("@assets/icons/message.svg");
+  @media screen and (min-width: 767px) and (max-width: 1119px){
+      margin: 0 16px;
+  }
+}
+
+.contact{
+  background-image: url("@assets/icons/contact.svg");
+  @media screen and (min-width: 767px) and (max-width: 1119px){
+      margin-right: 20px;
+  }
+}
+
+.repair{
+  background-image: url("@assets/icons/repair.svg");
+  margin-left: 20px;
+  margin-right: 16px;
+  @media screen and (min-width: 1119px){
+      margin-left: 8px;
+      margin-right: 32px;
+  }
+}
+
+.check-status{
+  background-image: url("@assets/icons/search.svg");
+  @media screen and (min-width: 1119px){
+      margin-left: 9px;
+      margin-right: 32px;
+  }
+}
+
+.menu, .phone, .message, .contact, .repair, .check-status{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.phone, .message, .contact{
+  display: none;
+  @media screen and (min-width: 767px) and (max-width: 1119px){
+      display: flex;
+  }
+}
+
+.header__title-desktop{
+  display: none;
+  @media screen and (min-width: 1119px){
+      display: block;
+      align-self: center;
+      font-family: 'TT Lakes-Regular', serif;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      letter-spacing: -0.2px;
+      color: $color-secondary;
+  }
+}
+

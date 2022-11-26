@@ -1,0 +1,23 @@
+$color-secondary: #1B1C21;
+$color-base: #ffffff;
+$color-primary: #7E7E82;
+$color-background: #EAEAEA;
+$color-background-section: #F8F8F8;
+$color-icons: #FF3E79;
+$color-hr: #D9FFF5;
+$color-divider-border: #41F6D7;
+$color-button-focus: #B8FFEC;
+$color-circle: #DDDDDD;
+$color-circle-active: #B5B6BC;
+
+$font-family-base: 'TT Lakes-Medium', sans-serif;
+$font-family-title: 'TT Lakes-Regular', sans-serif;
+$font-family-head: 'TT Lakes-Bold', sans-serif;
+
+%slide{
+  background-color: $color-base;
+  border: 1px solid $color-background;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.footer{
+  font-family: $font-family-title;
+  color: $color-primary;
+  mix-blend-mode: normal;
+  opacity: 0.72;
+  background-color: $color-background-section;
+  @media screen and (min-width: 1439px){
+    margin-left: 320px;
+  }
+}
+
+
+
+.footer__title{
+  &:nth-child(2){
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 767px){
+    max-width: 218px;
+    &:first-child{
+      text-align: left;
+    }
+    &:last-child{
+      text-align: right;
+    }
+    &:nth-child(2){
+      padding-bottom: 0;
+    }
+  }
+}
