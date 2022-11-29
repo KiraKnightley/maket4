@@ -46,13 +46,20 @@ buttonCallAside.addEventListener('click', (e) => {
     sideBarCall.style.display = 'block';
 })
 
-for (let i= 0; i<= sideBarClose.length; i++){
-    sideBarClose[i].addEventListener('click', (e) => {
-        sideBarConnect.style.display = 'none';
-        sideBarCall.style.display = 'none';
-        burgerMenu.style.opacity = '1';
-        mainContainer.style.opacity = '1';
-        header.style.opacity = '1';
-        footer.style.opacity = '1';
-    })
-}
+sideBarClose[0].addEventListener('click', (e) => {
+    sideBarConnect.style.display = 'none';
+    sideBarCall.style.display = 'none';
+    burgerMenu.style.opacity = '1';
+    mainContainer.style.opacity = '1';
+    header.style.opacity = '1';
+    footer.style.opacity = '1';
+})
+
+sideBarClose[1].addEventListener('click', (e) => {
+    sideBarConnect.style.display = 'none';
+    sideBarCall.style.display = 'none';
+    burgerMenu.style.opacity = '1';
+    mainContainer.style.opacity = '1';
+    header.style.opacity = '1';
+    footer.style.opacity = '1';
+})
